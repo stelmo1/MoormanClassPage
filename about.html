@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+        initial-scale-1, shrink-to-fit=no">
+    <title>About</title>
+    <link rel = 'stylesheet' href="css/style-about.css">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="js/responsive-nav.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class = 'page-title'>
+            <h2 class = 'apple-icon'>&#127822;</h2>
+            <h2 class = 'title'>About</h2>
+        </div>
+        <nav class = 'nav-collapse'>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="class-info.html">Class Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        var nav = responsiveNav(".nav-collapse")
+    </script>
+    <main>
+        <div class = 'left'>
+            <div class = 'bio'>
+                <img class = 'picture1' src="\img\emily.jpeg" alt="Emily Moorman">
+                <p class = 'bio-words'>My name is Emily Moorman and I've been a teacher for 28 years. 
+                    I hold an elementary education license as well as a special 
+                    eductaion license and have National Board certification in literacy.
+                    I'm committed to helping students learn, grow, set goals, and 
+                    reach them. I have been trained in the science of reading, and 
+                    have LETRS certification. I am looking forward to a great year, 
+                    and you can always feel free to reach out with questions!
+                </p>
+            </div>
+            <figure class = 'picture-card'>
+                <img class = 'picture2' src="img\supplies.jpg" alt="students in a classroom">
+        </div>
+        <div class = 'form'>
+            <h2 class = 'form-title'>Contact Me!</h2>
+            <form method="GET" action="/">
+                <label>
+                    <p class = 'label'>Your name: </p> 
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    <p class = 'label'>Student's name: </p> 
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    <p class = 'label'>Your e-mail: </p>
+                    <input type="email" name="email-address" required>
+                </label>
+                <label>
+                    <p class = 'label'>Questions or concerns?</p>
+                    <input class = 'bigger-input' type="text" name="name" required>
+                </label>
+                <button class = 'submit' type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class = 'footer-text'>@emoorman@chhs.k12.nc.us</p>
+    </footer>
+</body>

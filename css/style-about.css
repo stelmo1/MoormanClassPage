@@ -1,0 +1,198 @@
+/*https://coolors.co/335c67-fff3b0-90c2e7-9e2a2b-450709*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: 'Work Sans';
+    width: 100%;
+    margin: 0 auto; 
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    display: flex;
+    background-color: #335C67;
+    height: auto;
+    width:100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    transition: padding 350ms ease-in-out;
+}
+.apple-icon{
+    filter: grayscale(100%) brightness(500%);
+    padding-right: 20px;
+    padding-left: 15px;
+    scale: 200%;
+    position: absolute;
+}
+.page-title{
+    justify-self: flex-start;
+    color: #FFFF;
+    padding-left: 20px;
+    margin-top: 23px;
+    display: flex;
+}
+.title{
+    margin-left: 70px;
+}
+.nav-collapse{
+    justify-self: flex-end;
+    font-size: 30px;
+    padding: 15px;
+    transition: all 350ms ease-in-out;
+}
+a{
+    text-decoration: none;
+    color:#FFFF;
+}
+main{
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.picture1{
+    width: 20%;
+    margin: 20px;
+}
+.bio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #450709;
+    background-color: #90C2E7;
+    border-radius: 15px;
+    border-top: 10px solid;
+    border-color: #335C67;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bio-words{
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.label{
+    color: #450709;
+    font-size: 20px;
+}
+.form{
+    width: 100%;
+    color: #450709;
+    background-color: #90C2E7;
+    border-radius: 15px;
+    border-top: 10px solid;
+    border-color: #335C67;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+form{
+    padding: 15px;
+    width: 100%;
+    color: #450709;
+}
+input{
+    width: 93%;
+    height: 30px;
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0px;
+    border-radius: 4px;
+    border: 2px solid #335C67;
+    outline: none;
+    color: #450709;
+}
+input:focus, input:hover{
+    border-color: #9E2A2B;
+    outline: none; 
+}
+.bigger-input{
+    height: 100px;
+}
+.submit{
+    padding: 15px;
+    border-radius: 10px;
+    width: 95%;
+    margin-left: 8px;
+    border: none;
+    margin-top: 10px;
+    background-color: #450709;
+    color: #fff;
+    font-family: 'Work Sans';
+    font-size: 16px;
+}
+.submit:hover, .submit:focus{
+    background-color: #9E2A2B;
+}
+h2{
+    text-align: center;
+}
+.picture-card{
+    margin-top: 20px;
+    width: 100%; 
+    align-self: center;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+.picture2{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+@keyframes get-bigger {
+    0%{}
+    100%{transform: scale(1.04);}
+}
+.picture2:hover, .picture2:focus{
+    animation: get-bigger 350ms forwards;
+}
+figcaption{
+    color: #335C67;
+}
+footer{
+    background-color: #450709;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+.footer-text{
+    padding-left: 15px;
+    font-size: 20px;
+}
+@media screen and (min-width: 750px) {
+    main{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        width: 97%;
+        gap: 40px;
+    }
+    .left{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .picture2{
+        height: 300px;
+        margin-top: 40px;
+    }
+    .form{
+        grid-row: 1/3;
+        grid-column: 2/3;
+        margin-top: 0px;
+    }
+}
